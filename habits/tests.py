@@ -11,7 +11,7 @@ class HabitCreateTestCase(APITestCase):
         self.user = User.objects.create(
             username='Oleg',
             password='Oleg',
-            chat_id='918273645'
+            chat_id='9183645'
         )
 
         self.habit = Habit.objects.create(
@@ -151,7 +151,7 @@ class HabitCreateTestCase(APITestCase):
 
         data = {
             "place": "Home",
-            "time": "1q:00",
+            "time": "11:00",
             "action": "walking",
             "period": 9,
             "duration_of_action": 120,
