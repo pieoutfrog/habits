@@ -18,17 +18,19 @@ docker-compose up -d --build
     Создайте Базу данных (в данной работе используется PostgreSQL) и перейдите в файл .env и пропишите переменные окружения в формате(все данные после "=" в виде примера):
 
 SECRET_KEY = 'django-secret-key'
+
 DEBUG = True/False
 
-DATABASE_NAME = 'name_of_db'
-DATABASE_USER = 'db_user'
-DATABASE_PASSWORD = 'your_password'
-DATABASE_HOST = '127.0.0.1'
-DATABASE_PORT = 5432
 
-CELERY_BROKER_URL = 'smth://123.1.1.0:1234/0'
-CELERY_RESULT_BACKEND = 'smth://123.1.1.0:1234/0'
-CELERY_TIMEZONE = 'UTC'
+DATABASE_NAME = 'name_of_db'
+
+DATABASE_USER = 'db_user'
+
+DATABASE_PASSWORD = 'your_password'
+
+DATABASE_HOST = '127.0.0.1'
+
+DATABASE_PORT = 5432
 
 TG_URL = 'https://api.telegram.org/bot'
 TG_TOKEN = '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11'
@@ -38,7 +40,9 @@ TG_TOKEN = '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11'
         Для включения Redis(в терминале): sudo service redis-server start
         Команда для запуска сервера: python manage.py runserver
 
+
 Работа кода
+
 
 Создание пользователя
 
